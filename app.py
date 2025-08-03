@@ -132,7 +132,7 @@ def get_similar_products(product_name, product_names_dict, similarity_df, top_n=
 @st.cache_resource
 def load_all():
     try:
-        kmeans_model = joblib.load("best_kmeans_model.pkl")
+        kmeans_model = joblib.load("kmeans_model.pkl")
         scaler = joblib.load("scaler.pkl")
         product_similarity = joblib.load("product_similarity.pkl")
         product_names = joblib.load("product_names.pkl")
